@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/App-cripto-deploy/static/css/main.375361b6.css",
+    "main.js": "/App-cripto-deploy/static/js/main.5fbac023.js",
+    "static/media/IlustracionFondo.svg": "/App-cripto-deploy/static/media/IlustracionFondo.ac0d82579b909c06ac6d.svg",
+    "index.html": "/App-cripto-deploy/index.html",
+    "static/media/OndaTop.svg": "/App-cripto-deploy/static/media/OndaTop.f0d747e046579ab8d575.svg",
+    "static/media/github.svg": "/App-cripto-deploy/static/media/github.f3e8a9d544e34e5e2145dd2439ead1cf.svg",
+    "static/media/linkedin.svg": "/App-cripto-deploy/static/media/linkedin.12989d41e72fa24fa2f5a0b6216842b1.svg",
+    "static/media/x.svg": "/App-cripto-deploy/static/media/x.0285e34491a241e5e24e3f4d93ab07c3.svg",
+    "static/media/trending-down.svg": "/App-cripto-deploy/static/media/trending-down.9044a5caa30decdb7c16560a05dce8be.svg",
+    "static/media/trending-up.svg": "/App-cripto-deploy/static/media/trending-up.ebfe9a72d68a3815181771098350599d.svg",
+    "main.375361b6.css.map": "/App-cripto-deploy/static/css/main.375361b6.css.map",
+    "main.5fbac023.js.map": "/App-cripto-deploy/static/js/main.5fbac023.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.375361b6.css",
+    "static/js/main.5fbac023.js"
+  ]
+}
