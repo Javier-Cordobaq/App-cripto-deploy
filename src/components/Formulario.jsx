@@ -7,7 +7,7 @@ import useCriptomoneda from '../hooks/useCriptomoneda';
 import axios from 'axios';
 
 const Boton = styled.input`
-    margin-top: 40px;
+    margin-top: 50px;
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 20px;

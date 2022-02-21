@@ -25,7 +25,10 @@ border-radius: 5px;
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: center;
-  background-position-x: 45rem;
+  background-position-x: 90%;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
   }
 
 .contFoo {
@@ -41,8 +44,8 @@ border-radius: 5px;
                  15px -15px 30px #221b5d;
     /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
     grid-area: Info;
-    min-height: 530px;
-    max-height: 530px;
+    min-height: 90%;
+    max-height: 90%;
     overflow: auto;
     margin-right: 2rem;
     margin-top: 2rem;
@@ -65,8 +68,8 @@ border-radius: 5px;
     /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
     background-size: cover;
     grid-area: For;
-    min-height: 530px;
-    max-height: 530px;
+    min-height: 90%;
+    max-height: 90%;
     overflow: auto;
   }
 
@@ -81,17 +84,48 @@ border-radius: 5px;
     box-shadow:  -15px 15px 30px #0e0b27,
                  15px -15px 30px #221b5d;
   
-                 min-height: 530px;
+                 min-height: 90%;
                  max-height: 530px;
     overflow-y: auto;
-    scroll-snap-type:y mandatory;
-    grid-area: Cot;
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    grid-area: Cot;
   }
 
   .contCot::-webkit-scrollbar {
       width: 0px;
   }
+
+@media screen and (max-width: 500px) {
+  .contFor {
+    margin: 0.5rem;
+    border-radius: 48px;
+    background: #181342;
+    box-shadow:  -15px 15px 30px #0e0b27,
+                 15px -15px 30px #221b5d;
+    padding: 0px 30px 0px 30px;
+    /* box-shadow: -20px 0px 50px 0px #444444 ; */
+    /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+    background-size: cover;
+    min-height: 90%;
+    max-height: 90%;
+    overflow: auto;
+  }
+
+  .contCot {
+    margin: 0.5rem;
+    overflow-x: auto;
+  }
+
+  .contH {
+    display: none;
+    scroll-snap-type: x mandatory;
+  }
+
+  .Welcome {
+    background: none;
+  }
+}
 
 /*    .contCotizacion::-webkit-scrollbar-thumb {
     width: 5px;

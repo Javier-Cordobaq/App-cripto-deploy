@@ -46,6 +46,13 @@ const ContenedorInfo = styled.div`
     100% {
         }
 }
+
+@media screen and (max-width: 500px) {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+} 
+
 `;
 
 const Heading = styled.h1`

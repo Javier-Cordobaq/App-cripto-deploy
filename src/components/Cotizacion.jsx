@@ -1,8 +1,5 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import Down from '../media/trending-down.svg'
-import Up from '../media/trending-up.svg'
-import X from '../media/x.svg'
 
 const Button = styled.button` 
     position: absolute;
@@ -19,7 +16,21 @@ const Button = styled.button`
         transform: scale(0.9);
         cursor:pointer;
     }
-`;
+
+    @media screen and (max-width: 500px) {
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        top: 15px;
+        right: 15px;
+
+        &:active {
+            transform: scale(0.9);
+            cursor:pointer;
+        }
+    }
+
+    `;
 
 const Section = styled.div`
     position: relative;
@@ -29,8 +40,8 @@ const Section = styled.div`
     display: grid;
     place-items: center;
     grid-template-rows: auto auto 1fr auto;
-    min-height: 530px;
-    max-height: 530px;
+    min-height: 85vh;
+    max-height: 85vh;
     max-width: 100%;
     border-radius: 48px;
 
@@ -60,6 +71,13 @@ const Section = styled.div`
     .rojo {
         color: red;
     }
+
+    @media screen and (max-width: 500px) {
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+    }
 `;
 
 const Info = styled.p`
@@ -70,10 +88,11 @@ const Info = styled.p`
 `;
 
 const Precio = styled.p`
-min-width: 545px;
-max-width: 530px;
+min-width: 90%;
+max-width: 90%;
 margin: 0px;
 margin-left: 30px;
+margin-right: 30px;
 margin-top: 40px;
 margin-bottom: 45px;
 font-family: 'Bebas Neue', cursive;
@@ -82,6 +101,11 @@ text-align: center;
 font-weight: 70;
 font-size: 49px;
 border-bottom: 6px solid #66A2FE;
+
+@media screen and (max-width: 500px) {
+    font-size: 40px;
+}
+
 `
 
 const Cotizacion = ({PRICE, HIGHDAY, LOWDAY, CHANGEPCT24HOUR, LASTUPDATE, IMAGEURL, onClose, ID}) => {

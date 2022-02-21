@@ -14,6 +14,12 @@ grid-template-columns: 100%;
 gap: 1rem;  
 margin-top: 50px;
 margin-bottom: 50px; */
+
+@media screen and (max-width: 500px) {
+  display: flex;
+  flex-direction: row;
+}
+
 `;
 
 export default function Cards({resultado, onClose}) {

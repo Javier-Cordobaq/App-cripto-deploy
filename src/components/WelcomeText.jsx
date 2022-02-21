@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 const Contenedor = styled.div`
     heigth: 100vh
     width: 100%;
-    margin-left: 5rem;
+    padding-left: 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,11 +20,17 @@ const Contenedor = styled.div`
         100% {
             opacity: 100%;} 
     }
+
+    @media screen and (max-width: 500px) {
+        display: flex; 
+        text-align: center;
+        align-items: center;
+        padding-left: 0;
+    }
 `;
 
 const Titulo = styled.h1`
     font-family: 'Bebas Neue', cursive;
-    
     font-size: 60px;
     margin-bottom: 0px;
     margin-top: 0px;
